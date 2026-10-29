@@ -13,7 +13,9 @@ Team: SAT (MIT-BLR)   Track(s): Track 1 (eurs-t1)   Reported testing-phase submi
 4. **Logit Calibration:** Adds calibrated static offset $\Delta Z = [0.0, 0.0, 0.0, +0.10, +0.25]$ prior to $\operatorname{argmax}$, defeating the hard Zero-True-Positive coverage penalty cliff on rare classes.
 
 ## Training data
-Trained exclusively on the 20 provided EURS training scenes across 5 stratified folds. The 6 development scenes were reserved strictly for validation and hyperparameter selection. Zero testing-phase images were used in training, fine-tuning, adaptation, or pseudo-labelling.
+Trained exclusively on the 20 provided EURS training scenes across 5 stratified folds. The 6 development scenes were reserved strictly for validation, hyperparameter selection, and discrepancy audits. Zero testing-phase images were used in training, fine-tuning, adaptation, or pseudo-labelling.
+- **Exact Training Scenes (20 scenes):** `fish1`, `fish2`, `fish4`, `fish5`, `fish7`, `fish9`, `fish11`, `fish12`, `fish13`, `fish14`, `fish15`, `fish17`, `fish18`, `fish20`, `fish21`, `ray1`, `seahorse1`, `sharkFish`, `starfish2`, `turtles1`.
+- **Development Scenes (6 scenes, validation only):** `fish3`, `fish6`, `fish10`, `fish19`, `sharRayFish`, `starfish1`.
 - **External Data:** None.
 - **Pretrained Models:** DINOv3 ViT-Large/16 (LVD-142M self-supervised), ConvNeXt-Base (ImageNet-1k).
 
