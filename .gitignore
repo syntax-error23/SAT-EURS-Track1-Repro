@@ -1,0 +1,9 @@
+__pycache__/
+*.py[cod]
+*$py.class
+weights/*.pt
+weights/*.zip
+weights/*.tar*
+weights/*.bin
+weights/.download*
+reprocheck_*
